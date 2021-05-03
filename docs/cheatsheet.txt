@@ -1,0 +1,19 @@
+cd test-django
+python3 -m venv envwslubuntu
+source envwslubuntu/bin/activate
+
+# select interpreter Python 3. ... envwslubuntu:venv
+
+# import in project environment
+pip install black # not working with vscode although working fine on the command line!
+pip install yapf  # using yapf instead of black
+pip install Django
+python -m django --version
+
+# create project https://docs.djangoproject.com/en/3.2/intro/tutorial01/
+django-admin startproject mysite
+# test install
+python manage.py runserver
+# http://127.0.0.1:8000/
+
+# create app
